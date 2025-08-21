@@ -22,7 +22,7 @@ const Header = () => {
          <h1 className="text-white font-bold text-xl ">Portfolio</h1>
 
       <div className='flex gap-x-10 justify-end bg-[#2d2d2d] items-center '>
-        <Link href="#" className='text-gray-200 text-lg font-medium transition-all duration-300 hover:text-white hover:scale-110'>Home</Link>
+        <Link href="#home" className='text-gray-200 text-lg font-medium transition-all duration-300 hover:text-white hover:scale-110'>Home</Link>
         <Link href="#about" className='text-gray-200 text-lg font-medium transition-all duration-300 hover:text-white hover:scale-110'>About</Link>
         <Link href="#Skills" className='text-gray-200 text-lg font-medium transition-all duration-300 hover:text-white hover:scale-110'>Skills</Link>
         <Link href="#Projects" className='text-gray-200 text-lg font-medium transition-all duration-300 hover:text-white hover:scale-110'>Projects</Link>

@@ -1,15 +1,85 @@
-import React from 'react'
+"use client"
+import axios from 'axios'
+import React, { useState } from 'react'
 
 const ContactUs = () => {
-  return (
-    <div className='bg-[#181818] text-[#ece3e3] flex flex-col sm:flex-row max-h-screen justify-center h-full py-10 items-center gap-10 px-10'>
-      <div className='bg-white h-96 '>
-      this sia  contact us form bro Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore officiis iusto corrupti reiciendis, eos molestias mollitia, tenetur nobis earum doloremque praesentium incidunt accusamus! Tempora, ea sit obcaecati fugiat incidunt expedita?   
-      </div>
-      <div className='bg-white h-96 flex justify-center items-center px-10 '>
-ldksafj; Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia illo temporibus aspernatur, minima totam ea suscipit ex, quis quos odit quisquam dolor delectus? Provident neque nam voluptatem voluptas illo ut.
-      </div>
 
+let [FormData,SetFormData]=useState({
+   access_key:"881b5b74-2a53-4d04-b485-2284ecf313ed",
+  name:"",
+  email:"",
+  message:""
+})
+
+let [Submit,SetSubmit]=useState(false)
+
+let CheckForm=!FormData.name||!FormData.email||!FormData.message
+
+let SubmitData=async()=>{
+  if(CheckForm){
+      console.log("all fields must be require")
+      return 
+    }
+  try{
+    
+    let response=await axios.post("https://api.web3forms.com/submit",FormData)
+    if(response.data.success){
+      SetSubmit(true)
+      setTimeout(() => {
+        SetFormData({
+      access_key:"881b5b74-2a53-4d04-b485-2284ecf313ed",
+        name:"",
+        email:"",
+        message:""
+      })
+      SetSubmit(false)
+      }, 2000);
+    }
+  }
+  catch(error){
+    console.log("internal eror bro ",error)
+  }
+}
+
+let HandleFields=(e)=>{
+      SetFormData((prev)=>({
+        ...prev,
+        [e.target.name]:e.target.value
+      }))
+}
+
+
+  return (
+    <div id="Contact" className='bg-gray-800 min-h-[100vh]  text-[#ece3e3] flex flex-col py-10  justify-center items-center '>
+      
+      <h1 className='text-[#ece3e3] font-bold text-4xl  '>Contact Me</h1>
+        <form onSubmit={(e)=>e.preventDefault()} className=' flex flex-col justify-center pt-10 items-center gap-10'>
+        <input type="text" placeholder='name'
+        onChange={HandleFields}
+        name='name'
+        value={FormData.name}
+         className='border-2 border-white hover:border-blue-400 duration-300 transition-all  p-3
+          rounded-xl w-[70%]' required/>
+
+        <input type="email" placeholder='Email'
+        value={FormData.email}
+        name='email'
+        onChange={HandleFields}
+         className='border-2 border-white hover:border-blue-400 duration-300 transition-all  p-3 rounded-xl 
+         w-[70%]' required/>
+
+        <textarea rows={100} cols={100} placeholder='Your Message...'
+          onChange={HandleFields}
+          name='message'
+          value={FormData.message}
+           className='border-2 border-white hover:border-blue-400 duration-300 transition-all  p-3 rounded-xl
+            w-[70%] h-48' required />
+
+        <button onClick={SubmitData} 
+        disabled={Submit}
+         className={`  border-2 border-blue-400 px-4 py-2 rounded-2xl shadow-md hover:shadow-blue-100 hover:bg-blue-500 duration-500 transition-all ${Submit?"opactity-20 cursor-not-allowed ":"opactiy-100 cursor-pointer"}`} >{Submit?"Messsage Send Successfully":"Submit"}</button>
+    </form>
+     
     </div>
   )
 }

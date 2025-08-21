@@ -9,8 +9,8 @@ export default function mainpage() {
     {/* this isa  home page bro  bro  */}
     <HomePage/>
     <AboutPage/>
-    <Project/>
     <Skills/>
+    <Project/>
     <ContactUs/>
     </div>
   );
