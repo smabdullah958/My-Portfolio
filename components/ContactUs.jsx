@@ -52,11 +52,13 @@ let HandleFields=(e)=>{
 
 
   return (
-    <div id="Contact"
-       data-aos="zoom-in"
-      data-aos-duration="500"
-     className='bg-gray-800 min-h-[100vh]  text-[#ece3e3] flex flex-col py-10  justify-center items-center '>
-      
+    <div  id="Contact"
+    className='bg-gray-800 min-h-[100vh]  text-[#ece3e3]'>
+    <div 
+         data-aos="fade-right"
+       data-aos-delay="100"      
+       data-aos-duration="300"
+     className=' flex flex-col py-10  justify-center items-center '>
       <h1 className='text-[#ece3e3] font-bold text-4xl  '>Contact Me</h1>
         <form onSubmit={(e)=>e.preventDefault()} className=' flex flex-col justify-center pt-10 items-center gap-10'>
         <input type="text" placeholder='name'
@@ -85,7 +87,7 @@ let HandleFields=(e)=>{
          className={`  border-2 border-blue-400 px-4 py-2 rounded-2xl shadow-md  ${Submit ? "opacity-20 cursor-not-allowed" : "opacity-100 cursor-pointer hover:shadow-blue-100"}`} >
          {Submit?"Messsage Send Successfully":"Submit"}</button>
     </form>
-     
+     </div>
     </div>
   )
 }

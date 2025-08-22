@@ -1,15 +1,23 @@
 "use client"
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import {ReactTyped} from "react-typed";
 import Link from "next/link";
+import Aos from "aos";
+import "aos/dist/aos.css";   // ✅ important: import CSS
 
 const HomePage = () => {
+
+  useEffect(()=>{
+    Aos.init({
+       duration:1000,
+       once:true,
+    });
+  },[]);
+
   return (
     <section
       id="home"
-      data-aos="zoom-in"
-      data-aos-duration="500"
       className="w-full min-h-screen flex items-center justify-center pt-20  bg-gray-900 px-6"  >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center max-w-6xl">
         {/* Left Side - Image */}
@@ -17,6 +25,9 @@ const HomePage = () => {
           <Image
             src="/me2.png"
             alt="My Image"
+            data-aos="fade-right"
+            data-aos-delay="100"      
+            data-aos-duration="500"
             width={350}
             height={350}
             className="rounded-full shadow-lg border-4 border-gray-700 hover:scale-105 transition-all duration-500"
@@ -24,7 +35,12 @@ const HomePage = () => {
         </div>
 
         {/* Right Side - Text */}
-        <div className="text-center md:text-left space-y-4">
+        <div
+            data-aos="fade-left"
+            data-aos-delay="200"      
+            data-aos-duration="500"
+
+         className="text-center md:text-left space-y-4">
           <h1 className="text-3xl md:text-5xl font-extrabold text-white">
             I am <span className="text-blue-400">Syed Muhammad Abdullah</span>
           </h1>

@@ -5,7 +5,7 @@ import Project from "@/components/Project";
 import Skills from "@/components/Skills";
 export default function mainpage() {
     return (
-    <div >
+    <div>
     {/* this isa  home page bro  bro  */}
     <HomePage/>
     <AboutPage/>
