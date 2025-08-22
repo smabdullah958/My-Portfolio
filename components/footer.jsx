@@ -5,11 +5,10 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
 const Footer = () => {
   return (
-    <div className="bg-[#3483d8] flex flex-col justify-center items-center w-full h-[40vh]">
-      <h2 className="text-[#ece3e3] text-xl font-semibold mb-6">Connect with me</h2>
-
+    <div className="bg-[#618cf9] flex flex-col sm:flex-row p-5  justify-around items-center w-full 
+    h-[23vh]  sm:h-[16vh]">
       {/* Social Icons */}
-      <div className="flex gap-8">
+      <div className="flex gap-x-8">
         <Link href="https://github.com/smabdullah958" target="_blank">
           <FaGithub
             size={40}
@@ -24,11 +23,12 @@ const Footer = () => {
           />
         </Link>
       </div>
-
+    <div>
       {/* Footer Text */}
-      <p className="text-gray-200 mt-8 text-sm">
+      <p className="text-gray-200 mt-5 text-sm">
         © {new Date().getFullYear()} Abdullah | All rights reserved
       </p>
+      </div>
     </div>
   )
 }

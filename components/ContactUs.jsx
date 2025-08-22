@@ -2,6 +2,8 @@
 import axios from 'axios'
 import React, { useState } from 'react'
 
+
+
 const ContactUs = () => {
 
 let [FormData,SetFormData]=useState({
@@ -50,7 +52,10 @@ let HandleFields=(e)=>{
 
 
   return (
-    <div id="Contact" className='bg-gray-800 min-h-[100vh]  text-[#ece3e3] flex flex-col py-10  justify-center items-center '>
+    <div id="Contact"
+       data-aos="zoom-in"
+      data-aos-duration="500"
+     className='bg-gray-800 min-h-[100vh]  text-[#ece3e3] flex flex-col py-10  justify-center items-center '>
       
       <h1 className='text-[#ece3e3] font-bold text-4xl  '>Contact Me</h1>
         <form onSubmit={(e)=>e.preventDefault()} className=' flex flex-col justify-center pt-10 items-center gap-10'>
@@ -77,7 +82,8 @@ let HandleFields=(e)=>{
 
         <button onClick={SubmitData} 
         disabled={Submit}
-         className={`  border-2 border-blue-400 px-4 py-2 rounded-2xl shadow-md hover:shadow-blue-100 hover:bg-blue-500 duration-500 transition-all ${Submit?"opactity-20 cursor-not-allowed ":"opactiy-100 cursor-pointer"}`} >{Submit?"Messsage Send Successfully":"Submit"}</button>
+         className={`  border-2 border-blue-400 px-4 py-2 rounded-2xl shadow-md  ${Submit ? "opacity-20 cursor-not-allowed" : "opacity-100 cursor-pointer hover:shadow-blue-100"}`} >
+         {Submit?"Messsage Send Successfully":"Submit"}</button>
     </form>
      
     </div>
