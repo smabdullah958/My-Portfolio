@@ -18,7 +18,7 @@ const HomePage = () => {
   return (
     <section
       id="home"
-      className="w-full min-h-screen flex items-center justify-center pt-20  bg-gray-900 px-6"  >
+      className="w-full min-h-screen lg:min-h-[60vh] flex items-center justify-center pt-20  bg-gray-900 px-6"  >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center max-w-6xl">
         {/* Left Side - Image */}
         <div className="flex justify-center">
