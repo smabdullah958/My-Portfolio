@@ -6,7 +6,7 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa'
 const Footer = () => {
   return (
     <div className="bg-[#618cf9] flex flex-col sm:flex-row p-5  justify-around items-center w-full 
-    h-[21vh]  sm:h-[16vh] lg:h-64">
+    h-[21vh]  sm:h-[16vh] lg:h-40">
       {/* Social Icons */}
       <div className="flex gap-x-8">
         <Link href="https://github.com/smabdullah958" target="_blank">
