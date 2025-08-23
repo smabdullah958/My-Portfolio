@@ -37,7 +37,7 @@ const Skills = () => {
             key={i}
             className="bg-gray-800 rounded-2xl border border-blue-500 p-6 flex flex-col justify-center items-center hover:shadow-lg hover:shadow-blue-100 hover:scale-105 transition-all duration-1000"
           >
-            {/* Skill Image */}
+            {/* Skill Image */}   
             <div className="relative w-20 h-20 sm:w-32 sm:h-32 mb-4">
               <Image
                 src={items.img}

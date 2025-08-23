@@ -54,7 +54,7 @@ const Project = () => {
             data-aos-delay="200"      
             data-aos-duration="700"
             key={i}
-            className="bg-gray-800 rounded-2xl border-2 border-blue-200 hover:shadow-lg hover:shadow-blue-200  overflow-hidden hover:scale-105 transition-all duration-500 ">
+            className="bg-gray-800 rounded-2xl border-2 border-blue-200 hover:shadow-lg hover:shadow-blue-200  overflow-hidden hover:scale-105 transition-all  ">
             <div className="relative w-full h-56 ">
               <Image
                 src={items.image}

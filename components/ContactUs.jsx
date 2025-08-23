@@ -59,7 +59,7 @@ let HandleFields=(e)=>{
        data-aos-delay="100"      
        data-aos-duration="500"
      className=' flex flex-col py-10  justify-center items-center '>
-      <h1 className='text-[#ece3e3] font-bold text-4xl  '>Contact Me</h1>
+      <h1 className='text-[#ece3e3] font-bold text-4xl sm:pt '>Contact Me</h1>
         <form onSubmit={(e)=>e.preventDefault()} className=' flex flex-col justify-center pt-10 items-center gap-10'>
         <input type="text" placeholder='name'
         onChange={HandleFields}

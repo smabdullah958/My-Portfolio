@@ -4,13 +4,13 @@ import React from 'react'
 const aboutpage = () => {
   return (
     <div id="about"
-     className='w-full h-full  bg-gray-900 sm:px-16 px-10  py-10 md:pt-0 text-[#ece3e3]
+     className='w-full h-full  bg-gray-900 sm:px-16 px-10  pt-8 md:pt-0 text-[#ece3e3]
      text-xl '>
      <div  
       data-aos="fade-right"
       data-aos-delay="200"      
        data-aos-duration="500">
-     <h1 className='text-3xl font-bold py-5'>About Me</h1>
+     <h1 className='text-3xl font-bold pt-5'>About Me</h1>
        
     I am a passionate <span className='text-blue-400 font-bold'>Full Stack Developer </span> specializing in the <span className='text-blue-400 font-bold'>MERN stack</span> (MongoDB, Express.js, React, Node.js).
 I create scalable, modern, and user-friendly web applications with clean, maintainable code.
