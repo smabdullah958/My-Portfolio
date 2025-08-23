@@ -53,7 +53,7 @@ let HandleFields=(e)=>{
 
   return (
     <div  id="Contact"
-    className=' w-full h-full lg:p-10 bg-gray-800   text-[#ece3e3]'>
+    className=' w-full h-full 2xl:p-10  bg-gray-800   text-[#ece3e3]'>
     <div 
          data-aos="fade-right"
        data-aos-delay="100"      
