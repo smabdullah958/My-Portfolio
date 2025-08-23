@@ -17,7 +17,7 @@ const Skills = () => {
   return (
     <div
       id="Skills"
-      className="w-full bg-gray-900 sm:px-16 px-6 py-16 text-[#ece3e3]"
+      className="w-full bg-gray-900 sm:px-16 px-6 py-16 sm:py-14 text-[#ece3e3]"
     >
       <h1  data-aos="fade-right"
             data-aos-delay="200"      
