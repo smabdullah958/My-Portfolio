@@ -32,10 +32,10 @@ const Skills = () => {
           <div
            data-aos="fade-right"
             data-aos-delay="200"      
-            data-aos-duration="300"
+            data-aos-duration="500"
 
             key={i}
-            className="bg-gray-800 rounded-2xl border border-blue-500 p-6 flex flex-col justify-center items-center hover:shadow-lg hover:shadow-blue-100 hover:scale-105 transition-all duration-500"
+            className="bg-gray-800 rounded-2xl border border-blue-500 p-6 flex flex-col justify-center items-center hover:shadow-lg hover:shadow-blue-100 hover:scale-105 transition-all duration-1000"
           >
             {/* Skill Image */}
             <div className="relative w-20 h-20 sm:w-32 sm:h-32 mb-4">

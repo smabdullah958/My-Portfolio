@@ -30,7 +30,7 @@ const HomePage = () => {
             data-aos-duration="500"
             width={350}
             height={350}
-            className="rounded-full shadow-lg border-4 border-gray-700 hover:scale-105 transition-all duration-500"
+            className="rounded-full shadow-lg border-4 border-gray-700 hover:scale-105 transition-all hover:duration-1000"
           />
         </div>
 

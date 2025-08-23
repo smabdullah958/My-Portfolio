@@ -3,6 +3,7 @@
 import React from 'react'
 import Image from 'next/image'
 
+
 const Project = () => {
   let Projects = [
     {
@@ -24,6 +25,10 @@ const Project = () => {
       name: "Mini Goal Tracker",
       image: "/goal.png",
       repo:"https://github.com/smabdullah958/Goal_Tracker"
+    },{
+      name: "Porfolio Website",
+      image:"/Portfolio.png",
+      repo:"https://github.com/smabdullah958/world-link-company-"
     }
   ]
 
@@ -33,9 +38,9 @@ const Project = () => {
       className="w-full bg-gray-900 sm:px-16 px-6 py-5 text-white">
       <div>
       <h1
-      data-aos="fade-right"
-       data-aos-delay="100"      
-       data-aos-duration="300"
+          data-aos="fade-down"
+          data-aos-delay="200"
+          data_aos-duration="500"
        className="font-extrabold pb-10 text-center text-3xl sm:text-4xl">
         🚀 Latest Projects
       </h1>
@@ -47,7 +52,7 @@ const Project = () => {
           <div 
            data-aos="fade-right"
             data-aos-delay="200"      
-            data-aos-duration="300"
+            data-aos-duration="700"
             key={i}
             className="bg-gray-800 rounded-2xl border-2 border-blue-200 hover:shadow-lg hover:shadow-blue-200  overflow-hidden hover:scale-105 transition-all duration-500 ">
             <div className="relative w-full h-56 ">
