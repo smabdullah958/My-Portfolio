@@ -4,7 +4,7 @@ import React from 'react'
 const aboutpage = () => {
   return (
     <div id="about"
-     className='w-full h-full lg:py-14 bg-gray-900 sm:px-16 px-10  pt-8 md:pt-0 text-[#ece3e3]
+     className='w-full h-full xl:py-14 bg-gray-900 sm:px-16 px-10  pt-8 md:pt-0 text-[#ece3e3]
      text-xl '>
      <div  
       data-aos="fade-right"

@@ -21,7 +21,7 @@ const HomePage = () => {
       className="w-full h-full lg:p-10 flex items-center justify-center pt-20  bg-gray-900 px-6"  >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center max-w-6xl">
         {/* Left Side - Image */}
-        <div className="flex justify-center">
+        <div className="flex justify-center pt-5">
           <Image
             src="/me2.png"
             alt="My Image"
