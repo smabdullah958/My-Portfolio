@@ -8,7 +8,7 @@ const Project = () => {
   let Projects = [
     {
       name: "E-Commerce Website",
-      image: "/e commerce website.jpeg",
+      image: "/e_commerce_website.jpeg",
       repo:"https://github.com/smabdullah958/Ecommerce_Website"
     },
     {
