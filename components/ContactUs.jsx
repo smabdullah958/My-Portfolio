@@ -12,7 +12,7 @@ let [FormData,SetFormData]=useState({
   email:"",
   message:""
 })
-
+let [loading,setloading]=useState(false)
 let [Submit,SetSubmit]=useState(false)
 
 let CheckForm=!FormData.name||!FormData.email||!FormData.message
@@ -23,9 +23,10 @@ let SubmitData=async()=>{
       return 
     }
   try{
-    
+  setloading(true)  
     let response=await axios.post("https://api.web3forms.com/submit",FormData)
     if(response.data.success){
+      setloading(false)
       SetSubmit(true)
       setTimeout(() => {
         SetFormData({
@@ -35,7 +36,7 @@ let SubmitData=async()=>{
         message:""
       })
       SetSubmit(false)
-      }, 300);
+      }, 1000);
     }
   }
   catch(error){
@@ -84,8 +85,9 @@ let HandleFields=(e)=>{
 
         <button onClick={SubmitData} 
         disabled={Submit}
-         className={`  border-2 border-blue-400 px-4 py-2 rounded-2xl shadow-md  ${Submit ? "opacity-20 cursor-not-allowed" : "opacity-100 cursor-pointer hover:shadow-blue-100"}`} >
-         {Submit?"Messsage Send Successfully":"Submit"}</button>
+         className={`  border-2 border-blue-400 px-4 py-2 rounded-2xl shadow-md  ${Submit||loading ? "opacity-20 cursor-not-allowed" : "opacity-100 cursor-pointer hover:shadow-blue-100"}`} >
+         {loading ?<span className='opacity-30'> loading .. </span>:
+          Submit ? "Messsage Send Successfully" : "Submit"}</button>
     </form>
      </div>
     </div>

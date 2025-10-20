@@ -29,6 +29,10 @@ const Project = () => {
       name: "Porfolio Website",
       image:"/Portfolio.png",
       repo:"https://github.com/smabdullah958/world-link-company-"
+    },{
+      name: "Tourist Website",
+      image:"/Tourist App.png",
+      repo:"https://github.com/smabdullah958/world-link-company-"
     }
   ]
 
@@ -36,7 +40,7 @@ const Project = () => {
     <div
       id="Projects"
       className="w-full bg-gray-900 sm:px-16 px-6 py-5 text-white">
-      <div>
+      <div> 
       <h1
           data-aos="fade-down"
           data-aos-delay="200"
@@ -54,6 +58,9 @@ const Project = () => {
             data-aos-delay="200"      
             data-aos-duration="700"
             key={i}
+            style={{
+              transition: 'all 0.3s ease-in-out'
+            }}
             className="bg-gray-800 rounded-2xl border-2 border-blue-200 hover:shadow-lg hover:shadow-blue-200  overflow-hidden hover:scale-105 transition-all  ">
             <div className="relative w-full h-56 ">
               <Image

@@ -1,3 +1,4 @@
+"use client"
 
 import React from "react";
 import Image from "next/image";
@@ -11,31 +12,38 @@ let Tech = [
   { img: "/tailwind.png", name: "Tailwind CSS" },
   { img: "/redux.png", name: "Redux Toolkit" },
   { img: "/github.png", name: "GitHub" },
+  { img: "/next.png", name: "Next.js" },
 ];
 
 const Skills = () => {
   return (
     <div
       id="Skills"
-      className="w-full bg-gray-900 sm:px-16 px-6 py-16 sm:py-14 text-[#ece3e3]"
+      className="w-full bg-gray-900 sm:px-16 px-6 py-16 sm:py-14
+       text-[#ece3e3]"
     >
-      <h1  data-aos="fade-right"
-            data-aos-delay="200"      
-            data-aos-duration="300"
-           className="text-center font-bold text-3xl sm:text-4xl mb-12">
+      <h1  
+        data-aos="fade-right"
+        data-aos-delay="200"      
+        data-aos-duration="300"
+        className="text-center font-bold text-3xl sm:text-4xl mb-12"
+      >
         Skills
       </h1>
 
       {/* Skills Grid */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-10">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-10">
         {Tech.map((items, i) => (
           <div
-           data-aos="fade-right"
+            data-aos="fade-right"
             data-aos-delay="200"      
             data-aos-duration="500"
-
             key={i}
-            className="bg-gray-800 rounded-2xl border border-blue-500 p-6 flex flex-col justify-center items-center hover:shadow-lg hover:shadow-blue-100 hover:scale-105 transition-all duration-1000"
+            style={{
+              transition: 'all 0.3s ease-in-out'
+            }}
+            className="bg-gray-800 rounded-2xl border border-blue-500 p-6
+             flex flex-col justify-center items-center cursor-pointer hover:shadow-[0_0_20px_rgba(96,165,250,0.5)] hover:border-blue-400 hover:scale-105"
           >
             {/* Skill Image */}   
             <div className="relative w-20 h-20 sm:w-32 sm:h-32 mb-4">

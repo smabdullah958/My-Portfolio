@@ -30,6 +30,9 @@ const HomePage = () => {
             data-aos-duration="500"
             width={350}
             height={350}
+            style={{
+              transition: 'all 0.3s ease-in-out'
+            }}
             className="rounded-full shadow-lg border-4 border-gray-700 hover:scale-105 transition-all hover:duration-1000"
           />
         </div>
@@ -83,7 +86,7 @@ const HomePage = () => {
         </div>
       </div>
            
-        <Link href="/S M Abdullah.pdf" target="_blank" className=" fixed text-end bottom-4 right-5  z-50 px-4 py-3 bg-[#4e8bca] text-white font-semibold text-xl rounded-2xl  hover:bg-blue-600 transition-all duration-300  ">CV</Link>         
+        <Link href="/S M Abdullah.pdf" target="_blank" className=" fixed text-end bottom-4 right-5  z-50 px-4 py-3 bg-[#4e8bca] text-white font-semibold text-xl rounded-2xl  hover:bg-blue-600 transition-all duration-300">CV</Link>         
          
 
 
