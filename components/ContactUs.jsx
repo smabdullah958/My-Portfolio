@@ -35,7 +35,7 @@ let SubmitData=async()=>{
         message:""
       })
       SetSubmit(false)
-      }, 1000);
+      }, 300);
     }
   }
   catch(error){
