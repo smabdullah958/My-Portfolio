@@ -33,6 +33,8 @@ const HomePage = () => {
             style={{
               transition: 'all 0.3s ease-in-out'
             }}
+            loading="lazy"
+            priority={true}
             className="rounded-full shadow-lg border-4 border-gray-700 hover:scale-105 transition-all hover:duration-1000"
           />
         </div>
