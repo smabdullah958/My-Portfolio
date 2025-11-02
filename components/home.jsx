@@ -23,7 +23,7 @@ const HomePage = () => {
         {/* Left Side - Image */}
         <div className="flex justify-center pt-5">
           <Image
-            src="/me2.png"
+            src="/me2.jpeg"
             alt="My Image"
             data-aos="fade-right"
             data-aos-delay="100"      

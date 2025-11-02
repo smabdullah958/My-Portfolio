@@ -6,6 +6,11 @@ import Link from 'next/link'
 const Project = () => {
   let Projects = [
     {
+      name: "Tourist Website",
+      image:"/Tourist App.png",
+      repo:"https://github.com/smabdullah958/world-link-company-",
+      link:"https://ibnsahratravels.com/"
+    },{
       name: "E-Commerce Website",
       image: "/e_commerce_website.jpeg",
       repo:"https://github.com/smabdullah958/Ecommerce_Website"
@@ -19,21 +24,15 @@ const Project = () => {
       name: "Mini Client RelationShip Manager",
       image: "/CRM.png",
       repo:"https://github.com/smabdullah958/Mini_CRM"
-    },
-    {
-      name: "Mini Goal Tracker",
-      image: "/goal.png",
-      repo:"https://github.com/smabdullah958/Goal_Tracker"
     },{
       name: "Porfolio Website",
       image:"/Portfolio.png",
       repo:"https://github.com/smabdullah958/world-link-company-",
       link:"https://world-link-company-orpin.vercel.app/"
     },{
-      name: "Tourist Website",
-      image:"/Tourist App.png",
-      repo:"https://github.com/smabdullah958/world-link-company-",
-      link:"https://ibnsahratravels.com/"
+      name: "Mini Goal Tracker",
+      image: "/goal.png",
+      repo:"https://github.com/smabdullah958/Goal_Tracker"
     }
   ]
 
