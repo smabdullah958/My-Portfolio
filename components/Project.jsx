@@ -9,7 +9,7 @@ const Project = () => {
       name: "Tourist Website",
       image:"/Tourist App.png",
       repo:"https://github.com/smabdullah958/world-link-company-",
-      link:"https://ibnsahratravels.com/"
+      link:"https://ibnsahratravels.vercel.app/"
     },{
       name: "Porfolio Website",
       image:"/Portfolio.png",
