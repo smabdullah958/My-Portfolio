@@ -88,7 +88,7 @@ const HomePage = () => {
         </div>
       </div>
            
-        <Link href="/S_M_Abdullah.pdf" target="_blank" className=" fixed text-end bottom-4 right-5  z-50 px-4 py-3 bg-[#4e8bca] text-white font-semibold text-xl rounded-2xl  hover:bg-blue-600 transition-all duration-300">CV</Link>         
+        <Link href="/abdullah_CV.pdf" target="_blank" className=" fixed text-end bottom-4 right-5  z-50 px-4 py-3 bg-[#4e8bca] text-white font-semibold text-xl rounded-2xl  hover:bg-blue-600 transition-all duration-300">CV</Link>         
          
 
 
