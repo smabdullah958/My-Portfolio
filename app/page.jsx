@@ -4,7 +4,7 @@ import HomePage from "@/components/home"
 import Project from "@/components/Project";
 import Skills from "@/components/Skills";
 export default async function mainpage() {
-    await new Promise(resolve => setTimeout(resolve, 200)); 
+    await new Promise(resolve => setTimeout(resolve, 100)); 
   return (
     <div>
     {/* this isa  home page bro  bro  */}
