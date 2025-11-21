@@ -3,8 +3,7 @@ import ContactUs from "@/components/ContactUs";
 import HomePage from "@/components/home"
 import Project from "@/components/Project";
 import Skills from "@/components/Skills";
-export default async function mainpage() {
-    await new Promise(resolve => setTimeout(resolve, 100)); 
+export default function mainpage() {
   return (
     <div>
     {/* this isa  home page bro  bro  */}
