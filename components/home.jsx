@@ -71,18 +71,18 @@ const HomePage = () => {
 
           {/* Call to Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mt-6 justify-center md:justify-start">
-            <a
+            <Link
               href="#Projects"
               className="px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 transition-all duration-300"
             >
               View Projects
-            </a>
-            <a
+            </Link>
+            <Link
               href="#Contact"
               className="px-6 py-3 bg-gray-800 text-gray-200 font-semibold rounded-lg shadow-md border border-gray-600 hover:bg-gray-700 transition-all duration-300"
             >
               Contact Me
-            </a>
+            </Link>
           </div>
         </div>
       </div>

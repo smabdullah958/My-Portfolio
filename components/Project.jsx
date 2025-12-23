@@ -11,7 +11,13 @@ const Project = () => {
       repo:"https://github.com/smabdullah958/Ibnsahratravels",
       link:"https://ibnsahratravels.vercel.app/"
     },{
-      name: "Porfolio Website",
+      name:"Digital Marketing Agency website",
+      image:"/Humexa_Adnest.png",
+      repo:"https://github.com/smabdullah958/humexaadnestPortfolio",
+      link:"https://www.humexaadnest.com"
+    }
+    ,{
+      name: "Import Export Website",
       image:"/Portfolio.png",
       repo:"https://github.com/smabdullah958/world-link-company-",
       link:"https://world-link-company-orpin.vercel.app/"
