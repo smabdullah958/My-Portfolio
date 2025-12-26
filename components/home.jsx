@@ -77,12 +77,12 @@ const HomePage = () => {
             >
               View Projects
             </Link>
-            <Link
-              href="#Contact"
-              className="px-6 py-3 bg-gray-800 text-gray-200 font-semibold rounded-lg shadow-md border border-gray-600 hover:bg-gray-700 transition-all duration-300"
-            >
-              Contact Me
-            </Link>
+
+          <Link href="https://wa.me/923158239364?
+          text=Hi%20Abdullah,%20I%27d%20like%20to%20discuss%20a%20project%20with%20you."
+  target="_blank"
+  className="sm:hidden md:text-[10px]  lg:text-sm md:block px-6 py-3 bg-blue-500 text-white font-semibold rounded-xl hover:bg-blue-600 transition">Get Free Consultation</Link>
+
           </div>
         </div>
       </div>
