@@ -63,9 +63,11 @@ SetSubmitting(null)
           placeholder='Email' className='w-full lg:w-[30vw] p-2 border border-gray-600 rounded-md mb-3'/>  
            
           <textarea cols={40} rows={40} name='Message' value={Data.Message} required 
-          onChange={HandleValues} placeholder='Message' className='mb-3 w-full lg:w-[30vw] p-2 border border-gray-900 rounded-md h-32'/>  
+          onChange={HandleValues} placeholder='Message' className='mb-3 w-full lg:w-[30vw] p-2 border border-gray-600 rounded-md h-32'/>  
+          
           <button disabled={Submitting===false}  
-          className={`w-full lg:w-[30vw]   p-2 bg-gray-600 hover:bg-gray-700 text-white rounded-md mb-5 transition duration-300 ease-in-out ${Submitting===false ? "opacity-20 cursor-not-allowed" : ""}`}
+          className={`w-full lg:w-[30vw]   p-2 bg-gray-600 hover:bg-gray-700 text-white 
+            rounded-md mb-5 transition duration-300 ease-in-out ${Submitting===false ? "opacity-20 cursor-not-allowed" : ""}`}
            onClick={HandleClick}>{Submitting===false ? "Sending..." :"Send Message"}</button>
         </form>
         {/* Contact Info Section */}
