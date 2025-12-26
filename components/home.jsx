@@ -81,7 +81,7 @@ const HomePage = () => {
           <Link href="https://wa.me/923158239364?
           text=Hi%20Abdullah,%20I%27d%20like%20to%20discuss%20a%20project%20with%20you."
           target="_blank"
-           className="sm:hidden md:text-[10px]  lg:text-sm md:block px-6 py-3 bg-blue-500 text-white font-semibold rounded-xl hover:bg-blue-600 transition">
+          className="px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 transition-all duration-300">
             Contact Me</Link>
 
           </div>
