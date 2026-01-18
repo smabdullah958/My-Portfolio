@@ -1,24 +1,24 @@
-"use client"
+"use client";
 import Image from "next/image";
 import React, { useEffect } from "react";
-import {ReactTyped} from "react-typed";
+import { ReactTyped } from "react-typed";
 import Link from "next/link";
 import Aos from "aos";
-import "aos/dist/aos.css";   // ✅ important: import CSS
+import "aos/dist/aos.css"; // ✅ important: import CSS
 
 const HomePage = () => {
-
-  useEffect(()=>{
+  useEffect(() => {
     Aos.init({
-       duration:1000,
-       once:true,
+      duration: 1000,
+      once: true,
     });
-  },[]);
+  }, []);
 
   return (
     <section
       id="home"
-      className="w-full h-full 2xl:px-40 2xl:pt-48  2xl:pb-24 flex items-center justify-center pt-20  bg-gray-900 px-6"  >
+      className="w-full h-full 2xl:px-40 2xl:pt-48  2xl:pb-24 flex items-center justify-center pt-20  bg-gray-900 px-6"
+    >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center max-w-6xl">
         {/* Left Side - Image */}
         <div className="flex justify-center pt-5">
@@ -26,12 +26,12 @@ const HomePage = () => {
             src="/me2.jpeg"
             alt="My Image"
             data-aos="fade-right"
-            data-aos-delay="100"      
+            data-aos-delay="100"
             data-aos-duration="500"
             width={300}
             height={300}
             style={{
-              transition: 'all 0.3s ease-in-out'
+              transition: "all 0.3s ease-in-out",
             }}
             loading="lazy"
             className="rounded-full shadow-lg border-4 border-gray-700 hover:scale-105 transition-all hover:duration-1000"
@@ -40,29 +40,26 @@ const HomePage = () => {
 
         {/* Right Side - Text */}
         <div
-            data-aos="fade-left"
-            data-aos-delay="200"      
-            data-aos-duration="500"
-
-         className="text-center md:text-left space-y-4">
+          data-aos="fade-left"
+          data-aos-delay="200"
+          data-aos-duration="500"
+          className="text-center md:text-left space-y-4"
+        >
           <h1 className="text-3xl md:text-5xl font-extrabold text-white">
             I am <span className="text-blue-400">Syed Muhammad Abdullah</span>
           </h1>
 
-        <p className="text-lg md:text-2xl font-bold text-white">
+          <p className="text-lg md:text-2xl font-bold text-white">
             I am a{" "}
-        <ReactTyped
-              strings={[
-          "Full Stack Developer",
-          "MERN Stack Developer"
-        ]}
-        className="text-blue-400 font-extrabold"
-          typeSpeed={60}
-          backSpeed={40}
-          backDelay={1500}
-          loop
-          />
-        </p>
+            <ReactTyped
+              strings={["Full Stack Developer", "MERN Stack Developer"]}
+              className="text-blue-400 font-extrabold"
+              typeSpeed={60}
+              backSpeed={40}
+              backDelay={1500}
+              loop
+            />
+          </p>
 
           <p className="text-gray-400">
             Passionate about building modern, responsive, and scalable web
@@ -78,20 +75,25 @@ const HomePage = () => {
               View Projects
             </Link>
 
-          <Link href="https://wa.me/923158239364?
+            <Link
+              href="https://wa.me/923158239364?
           text=Hi%20Abdullah,%20I%27d%20like%20to%20discuss%20a%20project%20with%20you."
-          target="_blank"
-          className="px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 transition-all duration-300">
-            Contact Me</Link>
-
+              target="_blank"
+              className="px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 transition-all duration-300"
+            >
+              Contact Me
+            </Link>
           </div>
         </div>
       </div>
-           
-        <Link href="/abdullah_CV.pdf" target="_blank" className=" fixed text-end bottom-4 right-5  z-50 px-4 py-3 bg-[#4e8bca] text-white font-semibold text-xl rounded-2xl  hover:bg-blue-600 transition-all duration-300">CV</Link>         
-         
 
-
+      <Link
+        href="/AbdullahCV.pdf"
+        target="_blank"
+        className=" fixed text-end bottom-4 right-5  z-50 px-4 py-3 bg-[#4e8bca] text-white font-semibold text-xl rounded-2xl  hover:bg-blue-600 transition-all duration-300"
+      >
+        CV
+      </Link>
     </section>
   );
 };
