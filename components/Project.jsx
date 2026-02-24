@@ -11,6 +11,12 @@ const Project = () => {
       link: "http://toursite.site/",
     },
     {
+      name: "AI Powered Web Application",
+      image: "/PDFSummary.png",
+      repo: "https://github.com/smabdullah958/PdfSummary",
+      link: "https://chatsummary.vercel.app/",
+    },
+    {
       name: "Digital Marketing Agency website",
       image: "/Humexa_Adnest.png",
       repo: "https://github.com/smabdullah958/humexaadnestPortfolio",
