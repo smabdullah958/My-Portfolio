@@ -52,7 +52,10 @@ const HomePage = () => {
           <p className="text-lg md:text-2xl font-bold text-white">
             I am a{" "}
             <ReactTyped
-              strings={["Full Stack Developer", "MERN Stack Developer"]}
+              strings={[
+                "AI Powered Full Stack Developer",
+                "Building smart full-stack web applications",
+              ]}
               className="text-blue-400 font-extrabold"
               typeSpeed={60}
               backSpeed={40}
