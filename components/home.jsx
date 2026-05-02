@@ -50,11 +50,11 @@ const HomePage = () => {
           </h1>
 
           <p className="text-lg md:text-2xl font-bold text-white">
-            I am a{" "}
+            I am{" "}
             <ReactTyped
               strings={[
                 "AI Powered Full Stack Developer",
-                "Building smart full-stack web applications",
+                "building smart full-stack web applications",
               ]}
               className="text-blue-400 font-extrabold"
               typeSpeed={60}
@@ -65,8 +65,8 @@ const HomePage = () => {
           </p>
 
           <p className="text-gray-400">
-            Passionate about building modern, responsive, and scalable web
-            applications.
+            Building high-performance web applications and AI-driven solutions
+            for startups and agencies
           </p>
 
           {/* Call to Action Buttons */}
@@ -93,9 +93,9 @@ const HomePage = () => {
       <Link
         href="/AbdullahCV.pdf"
         target="_blank"
-        className=" fixed text-end bottom-4 right-5  z-50 px-4 py-3 bg-[#4e8bca] text-white font-semibold text-xl rounded-2xl  hover:bg-blue-600 transition-all duration-300"
+        className=" fixed text-end bottom-4 right-5  z-50 px-4 py-3 bg-[#4e8bca] text-white font-semibold text-md sm:text-xl rounded-2xl  hover:bg-blue-600 transition-all duration-300"
       >
-        CV
+        Download CV
       </Link>
     </section>
   );
