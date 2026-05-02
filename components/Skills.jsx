@@ -1,64 +1,94 @@
-"use client"
-
 import React from "react";
-import Image from "next/image";
-
-let Tech = [
-  { img: "/js.png", name: "JavaScript" },
-  { img: "/react.png", name: "React" },
-  { img: "/node.png", name: "Node.js" },
-  { img: "/express.png", name: "Express.js" },
-  { img: "/mongodb.png", name: "MongoDB" },
-  { img: "/tailwind.png", name: "Tailwind CSS" },
-  { img: "/redux.png", name: "Redux Toolkit" },
-  { img: "/github.png", name: "GitHub" },
-  { img: "/next.png", name: "Next.js" },
-];
+import {
+  SiReact,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiNodedotjs,
+  SiExpress,
+  SiMongodb,
+  SiGithub,
+  SiRedux,
+  SiOpenai,
+  SiGooglegemini,
+  SiLangchain,
+} from "react-icons/si";
 
 const Skills = () => {
   return (
-    <div
-      id="Skills"
-      className="w-full bg-gray-900 sm:px-16 px-6 py-16 sm:py-14
-       text-[#ece3e3]"
-    >
-      <h1  
-        data-aos="fade-right"
-        data-aos-delay="200"      
-        data-aos-duration="300"
-        className="text-center font-bold text-3xl sm:text-4xl mb-12"
-      >
-        Skills
+    <div className="w-full bg-gray-900 text-white py-16 px-6">
+      <h1 className="text-center text-3xl md:text-4xl font-bold mb-12">
+        My Skills
       </h1>
 
-      {/* Skills Grid */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-10">
-        {Tech.map((items, i) => (
-          <div
-            data-aos="fade-right"
-            data-aos-delay="200"      
-            data-aos-duration="500"
-            key={i}
-            style={{
-              transition: 'all 0.3s ease-in-out'
-            }}
-            className="bg-gray-800 rounded-2xl border border-blue-500 p-6
-             flex flex-col justify-center items-center cursor-pointer hover:shadow-[0_0_20px_rgba(96,165,250,0.5)] hover:border-blue-400 hover:scale-105"
-          >
-            {/* Skill Image */}   
-            <div className="relative w-20 h-20 sm:w-32 sm:h-32 mb-4">
-              <Image
-                src={items.img}
-                alt={items.name}
-                fill
-                className="object-contain"
-              />
-            </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {/* Frontend */}
+        <div className="bg-gray-800 p-6 rounded-2xl border border-blue-500 hover:scale-105 transition-all duration-700">
+          <h2 className="text-xl font-bold text-blue-400 mb-4">Frontend</h2>
 
-            {/* Skill Name */}
-            <p className="text-center text-lg font-medium">{items.name}</p>
+          <div className="flex items-center gap-3 mb-2">
+            <SiReact className="text-blue-400 size-8" /> React.js
           </div>
-        ))}
+
+          <div className="flex items-center gap-3 mb-2">
+            <SiNextdotjs className="size-8" /> Next.js
+          </div>
+
+          <div className="flex items-center gap-3">
+            <SiTailwindcss className="text-sky-400 size-8 " /> Tailwind CSS
+          </div>
+        </div>
+
+        {/* Backend */}
+        <div className="bg-gray-800 p-6 rounded-2xl border border-blue-500 hover:scale-105 transition-all duration-700">
+          <h2 className="text-xl font-bold text-blue-400 mb-4">Backend</h2>
+
+          <div className="flex items-center gap-3 mb-2">
+            <SiNodedotjs className="text-green-500 size-8" /> Node.js
+          </div>
+
+          <div className="flex items-center gap-3 mb-2">
+            <SiExpress className="size-8" /> Express.js
+          </div>
+
+          <div className="flex items-center gap-3">
+            <SiMongodb className="text-green-400 size-8" /> MongoDB
+          </div>
+        </div>
+
+        {/* Tools */}
+        <div className="bg-gray-800 p-6 rounded-2xl border border-blue-500 hover:scale-105 transition-all duration-700">
+          <h2 className="text-xl font-bold text-blue-400 mb-4">Tools</h2>
+
+          <div className="flex items-center gap-3 mb-2">
+            <SiGithub className="size-8" /> GitHub
+          </div>
+
+          <div className="flex items-center gap-3">
+            <SiRedux className="text-purple-400 size-8 mt-3" /> Redux Toolkit
+          </div>
+        </div>
+
+        {/* AI */}
+        <div className="bg-gray-800 p-6 rounded-2xl border border-blue-500 hover:scale-105 transition-all duration-700">
+          <h2 className="text-xl font-bold text-blue-400 mb-4">AI / LLM</h2>
+
+          <div className="flex items-center gap-3 mb-2">
+            <SiOpenai /> ChatGPT (OpenAI)
+          </div>
+
+          <div className="flex items-center gap-3 mb-2">
+            <SiGooglegemini className="size-8" /> Google Gemini
+          </div>
+
+          <div className="flex items-center gap-3 mb-2">
+            <SiLangchain className="size-8" /> LangChain
+          </div>
+
+          <div className="flex items-center gap-3 ">
+            {" "}
+            <span className="size-8">🧠</span> Vector Databases
+          </div>
+        </div>
       </div>
     </div>
   );
