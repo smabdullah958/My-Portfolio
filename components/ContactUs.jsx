@@ -90,7 +90,7 @@ SetSubmitting(null)
 
             <p className='flex items-center gap-3 mb-2'>
               <FaEnvelope className='text-gray-600' />
-              smabdullah958@gmail.com
+              smabdulla958@gmail.com
             </p>
           </div>
         </div>
