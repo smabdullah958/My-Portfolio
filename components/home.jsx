@@ -93,7 +93,7 @@ const HomePage = () => {
       <Link
         href="/AbdullahCV.pdf"
         target="_blank"
-        className=" fixed text-end bottom-4 right-5  z-50 px-4 py-3 bg-[#4e8bca] text-white font-semibold text-md sm:text-xl rounded-2xl  hover:bg-blue-600 transition-all duration-300"
+        className=" fixed text-end bottom-4 right-5  z-50 px-4 py-3 bg-[#4e8bca] text-white font-semibold text-md sm:text-lg 2xl:text-xl rounded-2xl  hover:bg-blue-600 transition-all duration-300"
       >
         Download CV
       </Link>
