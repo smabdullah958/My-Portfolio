@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 import { ReactTyped } from "react-typed";
 import Link from "next/link";
 import Aos from "aos";
-import "aos/dist/aos.css"; // ✅ important: import CSS
+import "aos/dist/aos.css";
 
 const HomePage = () => {
   useEffect(() => {
@@ -53,7 +53,7 @@ const HomePage = () => {
             I am{" "}
             <ReactTyped
               strings={[
-                "AI Powered Full Stack Developer",
+                "Full Stack Developer with Ai Integration",
                 "building smart full-stack web applications",
               ]}
               className="text-blue-400 font-extrabold"
