@@ -1,0 +1,64 @@
+"use client";
+
+import { X, Bot } from "lucide-react";
+
+import {
+  Card,
+  CardHeader,
+  CardContent,
+  CardFooter,
+} from "@/components/ui/card";
+
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+
+export default function ChatWindow({ onClose }) {
+  return (
+    <Card
+      className="
+      fixed
+      bottom-24
+      right-6
+      z-50
+      bg-zinc-950
+      border-zinc-800
+      shadow-2xl
+      flex
+      flex-col
+    "
+    >
+      <CardHeader className="flex-row items-center justify-between border-b border-zinc-800">
+        <div className="flex items-center gap-3">
+          <Avatar>
+            <AvatarFallback>
+              <Bot className="h-5 w-5" />
+            </AvatarFallback>
+          </Avatar>
+
+          <div>
+            <h2 className="font-semibold">AI Assistant</h2>
+            <p className="text-xs text-muted-foreground">Ask me anything</p>
+          </div>
+        </div>
+
+        <Button size="icon" variant="ghost" onClick={() => (onclose = false)}>
+          <X />
+        </Button>
+      </CardHeader>
+
+      <CardContent className="flex-1 overflow-hidden p-0">
+        <ScrollArea className="h-full px-4 py-4">
+          {/* Messages go here */}
+        </ScrollArea>
+      </CardContent>
+
+      <CardFooter className="gap-2 border-t border-zinc-800">
+        <Input placeholder="Type a message..." />
+
+        <Button>Send</Button>
+      </CardFooter>
+    </Card>
+  );
+}

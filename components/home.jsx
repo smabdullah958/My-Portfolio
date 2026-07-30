@@ -6,6 +6,8 @@ import Link from "next/link";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
+import ChatBot from "@/components/Chatbot/Button";
+
 const HomePage = () => {
   useEffect(() => {
     Aos.init({
@@ -89,6 +91,8 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+
+      <ChatBot />
 
       <Link
         href="/AbdullahCV.pdf"
