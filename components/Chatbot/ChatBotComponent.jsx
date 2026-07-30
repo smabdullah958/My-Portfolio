@@ -1,6 +1,6 @@
 "use client";
 
-import { X, Bot } from "lucide-react";
+import { Bot } from "lucide-react";
 
 import {
   Card,
@@ -14,7 +14,7 @@ import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
-export default function ChatWindow({ onClose }) {
+export default function ChatWindow() {
   return (
     <Card
       className="
@@ -22,11 +22,13 @@ export default function ChatWindow({ onClose }) {
       bottom-24
       right-6
       z-50
-      bg-zinc-950
+      bg-zinc-100
       border-zinc-800
       shadow-2xl
       flex
       flex-col
+      h-72
+      w-60
     "
     >
       <CardHeader className="flex-row items-center justify-between border-b border-zinc-800">
@@ -42,10 +44,6 @@ export default function ChatWindow({ onClose }) {
             <p className="text-xs text-muted-foreground">Ask me anything</p>
           </div>
         </div>
-
-        <Button size="icon" variant="ghost" onClick={() => (onclose = false)}>
-          <X />
-        </Button>
       </CardHeader>
 
       <CardContent className="flex-1 overflow-hidden p-0">
