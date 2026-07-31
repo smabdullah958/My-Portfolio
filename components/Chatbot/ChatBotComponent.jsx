@@ -142,7 +142,7 @@ export default function ChatWindow() {
           }}
         />
 
-        <Button onClick={handleSendMessage} disabled={loading}>
+        <Button disabled={loading} onClick={handleSendMessage}>
           {loading ? "..." : "Send"}
         </Button>
       </CardFooter>
